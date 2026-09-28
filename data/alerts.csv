@@ -1,0 +1,25 @@
+timestamp,type,severity,source_module,message,resolved
+2026-09-03 20:00:00,LOW_BATTERY,high,M7,Battery SoC is 20.1%.,False
+2026-09-03 18:00:00,BATTERY_LEVEL_WARNING,medium,M7,"Battery level is 47.1%, below the 50% warning level.",False
+2026-09-03 11:00:00,BATTERY_LEVEL_WARNING,medium,M7,"Battery level is 30.9%, below the 50% warning level.",False
+2026-09-02 20:00:00,LOW_BATTERY,high,M7,Battery SoC is 24.3%.,False
+2026-09-02 19:00:00,BATTERY_LEVEL_WARNING,medium,M7,"Battery level is 39.6%, below the 50% warning level.",False
+2026-09-02 12:00:00,BATTERY_LEVEL_WARNING,medium,M7,"Battery level is 31.0%, below the 50% warning level.",False
+2026-09-01 12:00:00,LOW_BATTERY,high,M7,Battery SoC is 22.2%.,False
+2026-09-01 09:00:00,BATTERY_LEVEL_WARNING,medium,M7,"Battery level is 31.3%, below the 50% warning level.",False
+2026-08-31 22:00:00,LOW_BATTERY,high,M7,Battery SoC is 20.0%.,False
+2026-08-31 20:00:00,ANOMALY,medium,M6,Abnormal operating pattern detected (score 0.66).,False
+2026-08-31 20:00:00,BATTERY_LEVEL_WARNING,medium,M7,"Battery level is 48.7%, below the 50% warning level.",False
+2026-08-31 16:00:00,ANOMALY,medium,M6,Abnormal operating pattern detected (score 0.64).,False
+2026-08-31 08:00:00,BATTERY_LEVEL_WARNING,medium,M7,"Battery level is 25.5%, below the 50% warning level.",False
+2026-08-30 21:00:00,LOW_BATTERY,high,M7,Battery SoC is 20.0%.,False
+2026-08-30 19:00:00,BATTERY_LEVEL_WARNING,medium,M7,"Battery level is 40.3%, below the 50% warning level.",False
+2026-08-30 09:00:00,BATTERY_LEVEL_WARNING,medium,M7,"Battery level is 25.4%, below the 50% warning level.",False
+2026-08-29 18:00:00,LOW_BATTERY,high,M7,Battery SoC is 20.0%.,False
+2026-08-29 09:00:00,BATTERY_LEVEL_WARNING,medium,M7,"Battery level is 27.5%, below the 50% warning level.",False
+2026-08-28 21:00:00,LOW_BATTERY,high,M7,Battery SoC is 21.5%.,False
+2026-08-28 20:00:00,BATTERY_LEVEL_WARNING,medium,M7,"Battery level is 39.8%, below the 50% warning level.",False
+2026-08-28 20:00:00,ANOMALY,medium,M6,Abnormal operating pattern detected (score 0.64).,False
+2026-08-28 17:00:00,ANOMALY,medium,M6,Abnormal operating pattern detected (score 0.63).,False
+2026-08-28 10:00:00,BATTERY_LEVEL_WARNING,medium,M7,"Battery level is 34.7%, below the 50% warning level.",False
+2026-08-28 00:00:00,LOW_BATTERY,high,M7,Battery SoC is 20.0%.,False

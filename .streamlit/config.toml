@@ -1,0 +1,99 @@
+# CRYOSYNC dashboard theme.
+#
+# Control-room editorial palette: paper-white surfaces, hairline rules,
+# ink-navy chrome, and four semantic status colors (critical / attention /
+# safe / info). All colors are declared once here so every native Streamlit
+# element inherits them consistently.
+
+[theme]
+base = "light"
+
+primaryColor = "#1D4ED8"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F4F6F8"
+textColor = "#101828"
+borderColor = "#E3E7ED"
+linkColor = "#1D4ED8"
+
+baseRadius = "small"
+buttonRadius = "small"
+showWidgetBorder = true
+showSidebarBorder = true
+
+# Inter with the default sans-serif stack as the offline fallback, and a
+# monospace face for every numeric/identifier token in the UI.
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+headingFont = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+codeFont = "JetBrains Mono:https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap"
+
+baseFontSize = 14
+baseFontWeight = 400
+codeFontSize = "0.8125rem"
+headingFontSizes = ["26px", "19px", "16px", "15px", "13px", "12px"]
+headingFontWeights = [600, 600, 600, 600, 600, 600]
+linkUnderline = false
+
+# Semantic status palette shared by badges, charts and tiles.
+redColor = "#C62828"
+redBackgroundColor = "#FDECEC"
+redTextColor = "#9B1C1C"
+orangeColor = "#B45309"
+orangeBackgroundColor = "#FFF6E5"
+orangeTextColor = "#8A4B08"
+yellowColor = "#A16207"
+yellowBackgroundColor = "#FEF9E7"
+yellowTextColor = "#854D0E"
+greenColor = "#157F51"
+greenBackgroundColor = "#E7F5EE"
+greenTextColor = "#0F6640"
+blueColor = "#1D4ED8"
+blueBackgroundColor = "#EAF0FE"
+blueTextColor = "#1E3FA8"
+grayColor = "#667085"
+grayBackgroundColor = "#F1F3F6"
+grayTextColor = "#475467"
+
+# Categorical chart series: demand, solar, wind, battery, diesel, reserve.
+chartCategoricalColors = [
+  "#2563EB",
+  "#D97706",
+  "#0E7490",
+  "#157F51",
+  "#C62828",
+  "#475467",
+  "#7C2D12",
+]
+
+# Sequential ramp (10 colors, warm-neutral to ink) for heat-style charts.
+chartSequentialColors = [
+  "#FFF7ED",
+  "#FDE7CF",
+  "#FBD5AE",
+  "#F7BE85",
+  "#EFA25C",
+  "#DF8438",
+  "#C4681F",
+  "#9C4F15",
+  "#73380C",
+  "#4A2306",
+]
+
+dataframeBorderColor = "#E3E7ED"
+dataframeHeaderBackgroundColor = "#F4F6F8"
+
+[theme.sidebar]
+backgroundColor = "#F7F8FA"
+secondaryBackgroundColor = "#EDF0F4"
+codeBackgroundColor = "#EDF0F4"
+textColor = "#101828"
+borderColor = "#E3E7ED"
+primaryColor = "#1D4ED8"
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+headless = true

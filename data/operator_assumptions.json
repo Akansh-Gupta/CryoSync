@@ -1,0 +1,9 @@
+{
+  "planned_resupply_days": 7.0,
+  "battery_reserve_floor_pct": 20.0,
+  "battery_reserve_target_pct": 35.0,
+  "demand_safety_margin": 1.1,
+  "scenario_months": 12,
+  "logistics_delay_multiplier": 0.5,
+  "storm_wind_threshold_ms": 18.0
+}

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="980" viewBox="0 0 1500 980">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#334155"/>
+    </marker>
+    <style>
+      .title{font:700 28px Arial;fill:#0f172a}.subtitle{font:16px Arial;fill:#475569}.group{font:700 18px Arial;fill:#0f172a}.box{stroke:#334155;stroke-width:1.5;rx:12}.label{font:600 15px Arial;fill:#0f172a}.small{font:13px Arial;fill:#334155}.line{stroke:#334155;stroke-width:2;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1500" height="980" fill="#f8fafc"/>
+  <text x="60" y="52" class="title">CRYOSYNC - Overall Architecture</text>
+  <text x="60" y="80" class="subtitle">Offline-first energy intelligence platform for a polar research station</text>
+
+  <rect x="40" y="110" width="250" height="770" fill="#e0f2fe" class="box"/>
+  <text x="60" y="145" class="group">Inputs</text>
+  <rect x="65" y="175" width="200" height="75" fill="#fff" class="box"/><text x="85" y="207" class="label">Station config</text><text x="85" y="230" class="small">capacity, limits, location</text>
+  <rect x="65" y="285" width="200" height="85" fill="#fff" class="box"/><text x="85" y="317" class="label">Weather data</text><text x="85" y="340" class="small">synthetic fallback or CSV</text>
+  <rect x="65" y="405" width="200" height="75" fill="#fff" class="box"/><text x="85" y="437" class="label">Occupancy model</text><text x="85" y="460" class="small">station population/activity</text>
+
+  <rect x="320" y="110" width="360" height="770" fill="#dcfce7" class="box"/>
+  <text x="340" y="145" class="group">Digital Twin</text>
+  <rect x="345" y="175" width="310" height="65" fill="#fff" class="box"/><text x="365" y="215" class="label">Weather + occupancy simulation</text>
+  <rect x="345" y="275" width="310" height="65" fill="#fff" class="box"/><text x="365" y="315" class="label">Zone load calculation</text>
+  <rect x="345" y="375" width="310" height="65" fill="#fff" class="box"/><text x="365" y="415" class="label">Solar + wind generation</text>
+  <rect x="345" y="475" width="310" height="85" fill="#fff" class="box"/><text x="365" y="510" class="label">Power balance</text><text x="365" y="534" class="small">battery, diesel, fuel, SOC</text>
+  <rect x="345" y="595" width="310" height="65" fill="#fff" class="box"/><text x="365" y="635" class="label">Validation checks</text>
+  <rect x="345" y="710" width="310" height="85" fill="#bbf7d0" class="box"/><text x="365" y="745" class="label">master_dataset.csv</text><text x="365" y="769" class="small">hourly station state</text>
+
+  <rect x="710" y="110" width="360" height="770" fill="#fef3c7" class="box"/>
+  <text x="730" y="145" class="group">AI and Optimization</text>
+  <rect x="735" y="175" width="310" height="65" fill="#fff" class="box"/><text x="755" y="215" class="label">Forecasting</text><text x="755" y="235" class="small">Prophet / XGBoost</text>
+  <rect x="735" y="275" width="310" height="65" fill="#fff" class="box"/><text x="755" y="315" class="label">Dispatch optimization</text><text x="755" y="335" class="small">MILP / SciPy</text>
+  <rect x="735" y="375" width="310" height="65" fill="#fff" class="box"/><text x="755" y="415" class="label">Anomaly detection</text><text x="755" y="435" class="small">Isolation Forest + rules</text>
+  <rect x="735" y="475" width="310" height="65" fill="#fff" class="box"/><text x="755" y="515" class="label">Health scoring</text><text x="755" y="535" class="small">battery and generator</text>
+  <rect x="735" y="575" width="310" height="65" fill="#fff" class="box"/><text x="755" y="615" class="label">Alert engine</text><text x="755" y="635" class="small">fuel, battery, storm, forecast</text>
+  <rect x="735" y="700" width="310" height="95" fill="#fde68a" class="box"/><text x="755" y="735" class="label">Generated outputs</text><text x="755" y="760" class="small">forecast, dispatch, anomalies,</text><text x="755" y="780" class="small">maintenance, alerts CSV files</text>
+
+  <rect x="1100" y="110" width="360" height="770" fill="#fce7f3" class="box"/>
+  <text x="1120" y="145" class="group">Interfaces and Storage</text>
+  <rect x="1125" y="175" width="310" height="80" fill="#fff" class="box"/><text x="1145" y="210" class="label">Streamlit dashboard</text><text x="1145" y="233" class="small">charts, alerts, replay, calendar</text>
+  <rect x="1125" y="295" width="310" height="80" fill="#fff" class="box"/><text x="1145" y="330" class="label">FastAPI service</text><text x="1145" y="353" class="small">status, forecast, dispatch, alerts</text>
+  <rect x="1125" y="415" width="310" height="80" fill="#fff" class="box"/><text x="1145" y="450" class="label">SQLite / PostgreSQL</text><text x="1145" y="473" class="small">local persistence and API sync</text>
+  <rect x="1125" y="535" width="310" height="80" fill="#fbcfe8" class="box"/><text x="1145" y="570" class="label">Operator</text><text x="1145" y="593" class="small">reviews decisions and alerts</text>
+
+  <path d="M265 212 L345 212" class="line"/><path d="M265 322 L345 207" class="line"/><path d="M265 442 L345 207" class="line"/>
+  <path d="M500 240 L500 275" class="line"/><path d="M500 340 L500 375" class="line"/><path d="M500 440 L500 475" class="line"/><path d="M500 560 L500 595" class="line"/><path d="M500 660 L500 710" class="line"/>
+  <path d="M655 752 L735 207" class="line"/><path d="M655 752 L735 307" class="line"/><path d="M655 752 L735 407" class="line"/><path d="M655 752 L735 507" class="line"/><path d="M655 752 L735 607" class="line"/>
+  <path d="M1045 747 L1125 215" class="line"/><path d="M1045 747 L1125 335" class="line"/><path d="M1045 747 L1125 455" class="line"/>
+  <path d="M1280 535 L1280 495" class="line"/><path d="M1280 415 L1280 375" class="line"/><path d="M1280 295 L1280 255" class="line"/>
+</svg>
